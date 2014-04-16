@@ -13,13 +13,22 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		concat: {
+			devJs: {
+				files : {
+					"public/asset/js/main-dev.js": [
+						"bower_components/jquery/dist/jquery.js",
+						"bower_components/bootstrap/js/tab.js",
+						"js/*.js"
+					]
+				}
+			}
+		},
 		uglify: {
 			release: {
 				files : {
 					"public/asset/js/main-min.js":[
-						"bower_components/jquery/dist/jquery.min.js",
-						"bower_components/bootstrap/dist/bootstrap.min.js",
-						"js/*.js"
+						"public/asset/js/main-dev.js"
 					]
 				}
 			}
@@ -30,8 +39,8 @@ module.exports = function(grunt) {
 				tasks: ["less"]
 			},
 			js : {
-				files: ["js/*.js"],
-				tasks: ["uglify"]
+				files: ["js/*.js","bower_components/bootstrap/js/*.js"],
+				tasks: ["concat","uglify"]
 			}
 		},
 		connect: {
@@ -50,7 +59,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks("grunt-contrib-uglify");
 	grunt.loadNpmTasks("grunt-contrib-connect");
 
-	grunt.registerTask("default",["less","uglify"]);
+	grunt.registerTask("default",["less","concat","uglify"]);
 	grunt.registerTask("dev",["default","watch"]);
 	grunt.registerTask("site",["connect:yng:keepalive"]);
 
