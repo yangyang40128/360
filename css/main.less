@@ -1,1 +1,41 @@
 @import "bootstrap-customize.less";
+
+.box-wrapper {
+	.make-row();
+	padding: 1em 0;
+	.box {
+		.make-xs-column(6);
+		float: left;
+	}
+	div.login-box {
+		display: none;
+	}
+	@media screen and (min-width:@screen-md-min) {
+		.box {
+			.make-xs-column(4);
+		}
+		div.login-box {
+			display: block;
+		}
+	}
+	@media screen and (min-width:@screen-lg-min) {
+		.box {
+			.make-xs-column(3);
+		}
+	}
+}
+.ad-wrapper {
+	.make-row();
+	padding: 2em 0;
+	.ad-box {
+		.make-xs-column(4);
+	}
+	img {
+		width: 100%;
+	}
+}
+.page-footer {
+	padding: 2em;
+	background-color: gray;
+	text-align: center;
+}

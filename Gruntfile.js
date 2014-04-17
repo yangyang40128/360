@@ -19,6 +19,7 @@ module.exports = function(grunt) {
 					"public/asset/js/main-dev.js": [
 						"bower_components/jquery/dist/jquery.js",
 						"bower_components/bootstrap/js/tab.js",
+						"bower_components/bootstrap/js/dropdown.js",
 						"js/*.js"
 					]
 				}

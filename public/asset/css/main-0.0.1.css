@@ -5606,7 +5606,11 @@ button.close {
 .panel-body:before,
 .panel-body:after,
 .modal-footer:before,
-.modal-footer:after {
+.modal-footer:after,
+.box-wrapper:before,
+.box-wrapper:after,
+.ad-wrapper:before,
+.ad-wrapper:after {
   content: " ";
   display: table;
 }
@@ -5623,7 +5627,9 @@ button.close {
 .navbar-collapse:after,
 .pager:after,
 .panel-body:after,
-.modal-footer:after {
+.modal-footer:after,
+.box-wrapper:after,
+.ad-wrapper:after {
   clear: both;
 }
 .center-block {
@@ -5771,4 +5777,64 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+.box-wrapper {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 1em 0;
+}
+.box-wrapper .box {
+  position: relative;
+  width: 50%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+}
+.box-wrapper div.login-box {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .box-wrapper .box {
+    position: relative;
+    float: left;
+    width: 33.33333333%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .box-wrapper div.login-box {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .box-wrapper .box {
+    position: relative;
+    float: left;
+    width: 25%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.ad-wrapper {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 2em 0;
+}
+.ad-wrapper .ad-box {
+  position: relative;
+  float: left;
+  width: 33.33333333%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.ad-wrapper img {
+  width: 100%;
+}
+.page-footer {
+  padding: 2em;
+  background-color: gray;
+  text-align: center;
 }
