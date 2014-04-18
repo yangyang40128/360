@@ -5607,8 +5607,6 @@ button.close {
 .panel-body:after,
 .modal-footer:before,
 .modal-footer:after,
-.box-wrapper:before,
-.box-wrapper:after,
 .ad-wrapper:before,
 .ad-wrapper:after {
   content: " ";
@@ -5628,7 +5626,6 @@ button.close {
 .pager:after,
 .panel-body:after,
 .modal-footer:after,
-.box-wrapper:after,
 .ad-wrapper:after {
   clear: both;
 }
@@ -5778,44 +5775,8 @@ button.close {
     display: none !important;
   }
 }
-.box-wrapper {
-  margin-left: -15px;
-  margin-right: -15px;
+.main-content {
   padding: 1em 0;
-}
-.box-wrapper .box {
-  position: relative;
-  width: 50%;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  float: left;
-}
-.box-wrapper div.login-box {
-  display: none;
-}
-@media screen and (min-width: 992px) {
-  .box-wrapper .box {
-    position: relative;
-    float: left;
-    width: 33.33333333%;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .box-wrapper div.login-box {
-    display: block;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .box-wrapper .box {
-    position: relative;
-    float: left;
-    width: 25%;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
 }
 .ad-wrapper {
   margin-left: -15px;
@@ -5837,4 +5798,7 @@ button.close {
   padding: 2em;
   background-color: gray;
   text-align: center;
+}
+.full-width {
+  width: 100%;
 }

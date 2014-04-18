@@ -14,7 +14,7 @@
                 <small>上来这货，马上有钱</small>
             </h1>
         </div>
-        <ul class="nav nav-justified">
+        <ul class="nav nav-tabs">
             <li class="active"><a href="#">首页</a>
             </li>
             <li><a href="#">个人贷款</a>
@@ -38,147 +38,194 @@
             <li><a href="#">攻略</a>
             </li>
         </ul>
-        <div class="box-wrapper">
-            <div class="box">
-                <ul class="nav nav-pills nav-stacked">
-                    <li><a href="#home" data-toggle="pill">我要贷款/借款</a>
-                    </li>
-                    <li><a href="#profile" data-toggle="pill">我要投资</a>
-                    </li>
-                    <li><a href="#messages" data-toggle="pill">我要办信用卡</a>
-                    </li>
-                    <li><a href="#settings" data-toggle="pill">来这货的应用</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="box">
-                <div class="tab-content">
-                    <div class="tab-pane active" id="home">
-                        <div class="input-group">
-                            <input type="text" class="form-control">
-                            <div class="input-group-btn">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu pull-right">
-                                    <li><a href="#">Action</a>
-                                    </li>
-                                    <li><a href="#">Another action</a>
-                                    </li>
-                                    <li><a href="#">Something else here</a>
-                                    </li>
-                                    <li class="divider"></li>
-                                    <li><a href="#">Separated link</a>
-                                    </li>
-                                </ul>
+        <div class="main-content">
+            <div class="row">
+                <div class="col-sm-3 col-md-2 col-lg-2">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="#home" data-toggle="pill">我要贷款/借款</a>
+                        </li>
+                        <li><a href="#profile" data-toggle="pill">我要投资</a>
+                        </li>
+                        <li><a href="#messages" data-toggle="pill">我要办信用卡</a>
+                        </li>
+                        <li><a href="#settings" data-toggle="pill">来这货的应用</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-9 col-md-5 col-lg-4">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="home">
+                            <form class="form-horizontal" role="form">
+                                <div class="form-group">
+                                    <label for="inputText1" class="col-sm-3 control-label">贷款额度</label>
+                                    <div class="col-sm-9">
+                                        <div class="dropdown">
+                                            <input type="text" class="form-control dropdown-toggle" data-toggle="dropdown" id="inputText1" placeholder="5">
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">1</a>
+                                                </li>
+                                                <li><a href="#">2</a>
+                                                </li>
+                                                <li><a href="#">3</a>
+                                                </li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">10</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputText2" class="col-sm-3 control-label">贷款周期</label>
+                                    <div class="col-sm-9">
+                                        <div class="dropdown">
+                                            <input type="text" class="form-control dropdown-toggle" data-toggle="dropdown" id="inputText2" placeholder="1年">
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">1年</a>
+                                                </li>
+                                                <li><a href="#">2年</a>
+                                                </li>
+                                                <li><a href="#">3年</a>
+                                                </li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">其他</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputText3" class="col-sm-3 control-label">身份职业</label>
+                                    <div class="col-sm-9">
+                                        <div class="dropdown">
+                                            <input type="text" class="form-control dropdown-toggle" data-toggle="dropdown" id="inputText3" placeholder="学生">
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">主管</a>
+                                                </li>
+                                                <li><a href="#">经理</a>
+                                                </li>
+                                                <li><a href="#">IT工程师</a>
+                                                </li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">其他</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-3 col-sm-9">
+                                        <button type="submit" class="btn btn-default">贷款</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="profile">我要投资</div>
+                        <div class="tab-pane" id="messages">我要办信用卡</div>
+                        <div class="tab-pane" id="settings">来这货的应用</div>
+                    </div>
+                </div>
+                <div class="col-lg-2 visible-lg">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="#home">信贷产品经理</a>
+                        </li>
+                        <li><a href="#profile">互联网金融产品经理</a>
+                        </li>
+                        <li><a href="#messages">信用卡产品经理</a>
+                        </li>
+                        <li><a href="#settings">银行产品经理</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-5 col-lg-4 visible-md visible-lg">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 control-label">用户名</label>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
                             </div>
                         </div>
-                    </div>
-                    <div class="tab-pane" id="profile">我要投资</div>
-                    <div class="tab-pane" id="messages">我要办信用卡</div>
-                    <div class="tab-pane" id="settings">来这货的应用</div>
-                </div>
-            </div>
-            <div class="box visible-lg">
-                <ul class="nav nav-pills nav-stacked">
-                    <li><a href="#home">信贷产品经理</a>
-                    </li>
-                    <li><a href="#profile">互联网金融产品经理</a>
-                    </li>
-                    <li><a href="#messages">信用卡产品经理</a>
-                    </li>
-                    <li><a href="#settings">银行产品经理</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="box login-box">
-                <form class="form-horizontal" role="form">
-                    <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-                        <div class="col-sm-10">
-                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox">Remember me
-                                </label>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-3 control-label">密码</label>
+                            <div class="col-sm-9">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
                             </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <button type="submit" class="btn btn-default">Sign in</button>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">记住我
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <button type="submit" class="btn btn-default">Sign in</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="ad-wrapper">
+                <div class="ad-box">
+                    <img src="../public/asset/img/ad.png" alt="140*140" class="img-thumbnail" />
+                </div>
+                <div class="ad-box">
+                    <img src="../public/asset/img/ad.png" alt="140*140" class="img-thumbnail" />
+                </div>
+                <div class="ad-box">
+                    <img src="../public/asset/img/ad.png" alt="140*140" class="img-thumbnail" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <h2>房贷</h2>
+                        <img src="../public/asset/img/ad.png" class="img-thumbnail full-width" alt="140*140">
+                        <div class="caption">
+                            <h3>label</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, impedit, eius porro nobis repudiandae atque sit. Nobis, corporis, ut, voluptate id eaque autem tempora atque temporibus quae rerum sapiente doloribus.</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Button</a>  <a href="#" class="btn btn-default" role="button">Button</a>
+                            </p>
                         </div>
                     </div>
-                </form>
-            </div>
-        </div>
-        <div class="ad-wrapper">
-            <div class="ad-box">
-                <img src="../public/asset/img/ad.png" alt="140*140" class="img-thumbnail" />
-            </div>
-            <div class="ad-box">
-                <img src="../public/asset/img/ad.png" alt="140*140" class="img-thumbnail" />
-            </div>
-            <div class="ad-box">
-                <img src="../public/asset/img/ad.png" alt="140*140" class="img-thumbnail" />
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <h2>房贷</h2>
-                    <img src="../public/asset/img/ad.png" class="img-thumbnail full-width" alt="140*140">
-                    <div class="caption">
-                        <h3>label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, impedit, eius porro nobis repudiandae atque sit. Nobis, corporis, ut, voluptate id eaque autem tempora atque temporibus quae rerum sapiente doloribus. </p>
-                        <p><a href="#" class="btn btn-primary" role="button">Button</a>  <a href="#" class="btn btn-default" role="button">Button</a>
-                        </p>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <h2>车贷</h2>
+                        <img src="../public/asset/img/ad.png" class="img-thumbnail full-width" alt="140*140">
+                        <div class="caption">
+                            <h3>label</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, impedit, eius porro nobis repudiandae atque sit. Nobis, corporis, ut, voluptate id eaque autem tempora atque temporibus quae rerum sapiente doloribus.</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Button</a>  <a href="#" class="btn btn-default" role="button">Button</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <h2>车贷</h2>
-                    <img src="../public/asset/img/ad.png" class="img-thumbnail full-width" alt="140*140">
-                    <div class="caption">
-                        <h3>label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, impedit, eius porro nobis repudiandae atque sit. Nobis, corporis, ut, voluptate id eaque autem tempora atque temporibus quae rerum sapiente doloribus. </p>
-                        <p><a href="#" class="btn btn-primary" role="button">Button</a>  <a href="#" class="btn btn-default" role="button">Button</a>
-                        </p>
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <h2>信用卡</h2>
+                        <img src="../public/asset/img/ad.png" class="img-thumbnail full-width" alt="140*140">
+                        <div class="caption">
+                            <h3>label</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, impedit, eius porro nobis repudiandae atque sit. Nobis, corporis, ut, voluptate id eaque autem tempora atque temporibus quae rerum sapiente doloribus.</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Button</a>  <a href="#" class="btn btn-default" role="button">Button</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <h2>信用卡</h2>
-                    <img src="../public/asset/img/ad.png" class="img-thumbnail full-width" alt="140*140">
-                    <div class="caption">
-                        <h3>label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, impedit, eius porro nobis repudiandae atque sit. Nobis, corporis, ut, voluptate id eaque autem tempora atque temporibus quae rerum sapiente doloribus. </p>
-                        <p><a href="#" class="btn btn-primary" role="button">Button</a>  <a href="#" class="btn btn-default" role="button">Button</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                    <h2>信用卡</h2>
-                    <img src="../public/asset/img/ad.png" class="img-thumbnail full-width" alt="140*140">
-                    <div class="caption">
-                        <h3>label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, impedit, eius porro nobis repudiandae atque sit. Nobis, corporis, ut, voluptate id eaque autem tempora atque temporibus quae rerum sapiente doloribus. </p>
-                        <p><a href="#" class="btn btn-primary" role="button">Button</a>  <a href="#" class="btn btn-default" role="button">Button</a>
-                        </p>
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <h2>信用卡</h2>
+                        <img src="../public/asset/img/ad.png" class="img-thumbnail full-width" alt="140*140">
+                        <div class="caption">
+                            <h3>label</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, impedit, eius porro nobis repudiandae atque sit. Nobis, corporis, ut, voluptate id eaque autem tempora atque temporibus quae rerum sapiente doloribus.</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Button</a>  <a href="#" class="btn btn-default" role="button">Button</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
