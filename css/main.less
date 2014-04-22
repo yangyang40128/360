@@ -1,109 +1,57 @@
+@import "variables.less";
+@import "helpers.less";
+@import "fonts.less";
 @import "bootstrap-customize.less";
-.main-content {
-	padding: 1em 0;
+
+.full-width {
+	width: 100%;
 }
-.ad-wrapper {
-	.make-row();
-	padding: 2em 0;
-	.ad-box {
-		.make-xs-column(4);
-	}
+.ad {
+	margin: 1em 0;
+	height: 100px;
+	border: 5px solid @tulip;
+	overflow: hidden;
 	img {
 		width: 100%;
 	}
 }
-.page-footer {
-	padding: 2em;
-	background-color: gray;
-	text-align: center;
-}
-.full-width {
-	width: 100%;
-}
-.feature-box {
-	margin: 2em 0;
-	.feature-header {
-		position: relative;
-		margin: 1em 0;
-		padding: 0 0 2em @table-cell-padding;
-		border-bottom: 1px solid @gray-lighter;
-		line-height: 14px;
-		height: 14px;
-		span:first-child {
-			color: blue;
-			font-size:@font-size-h3;
-			vertical-align: middle;
-		}
-		span.last-child {
-			font-size:@font-size-base;
-			color: @text-color;
-		}
-		.more-text {
-			position: absolute;
-			right: 8px;
-			font-size:@font-size-base;
-		}
-	}
-	.nav-tabs-wrapper {
-		position: absolute;
-		top: -1em;
-		left: 100px;
-	}
-	.feature-tab {
-		min-height: 150px;
-	}
-	.feature-content {
-		.table {
-			table-layout: fixed;
-		}
-		td {
-			vertical-align: middle;
-			text-overflow: ellipsis;
-			overflow: hidden;
-			white-space: nowrap;
+div.poster {
+	position: relative;
+	height: 500px;
+	margin-bottom: -400px;
+	overflow: hidden;
 
-			border: none;
-		}
-		td:last-child {
-			text-align: right;
-		}
-		em {
-			font-style: normal;
-			color: @brand-warning;
-		}
+	img {
+		width: 100%;
 	}
-	.feature-card {
-		img {
-			float: left;
-			height: 54px;
-			width: 54px;
-		}
-		span {
-			margin: 0 1em;
-		}
-		.star {
-			color: @gray;
-			&.star-1 {
-				i:first-child {
-					color: @brand-warning;
-				}
-			}
-			&.star-2 {
-				i:nth-child(-n+3) {
-					color: @brand-warning;
-				}
-			}
-			&.star-3 {
-				i:nth-child(n-2) {
-					color: @brand-warning;
-				}
-			}
-		}
+	&:before {
+		content: "";
+		position: absolute;
+		height: 100px;
+		right: 0;
+		left: 0;
+		bottom: 0;
+
+		.linear-gradient(fadeout(white,100%),white);
 	}
+}
+div.advance-search-item {
+	padding: 1em 0;
+	border-bottom: 1px dashed @tulip;
+	.title {
+		color: @tulip;
+	}
+	a {
+		margin-right: 0.5em;
+	}
+}
+.tulip {
+	color: @tulip;
 }
 .footer-customize {
-	background-color: fadeout(black, 20%);
 	padding: 1em 0;
+	margin-top: 5em;
+	background-color: @mirage;
 	text-align: center;
 	color: @gray-light;
 	a {

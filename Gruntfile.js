@@ -20,6 +20,8 @@ module.exports = function(grunt) {
 						"bower_components/jquery/dist/jquery.js",
 						"bower_components/bootstrap/js/tab.js",
 						"bower_components/bootstrap/js/dropdown.js",
+						"bower_components/bootstrap/js/transition.js",
+						"bower_components/bootstrap/js/collapse.js",
 						"js/*.js"
 					]
 				}
