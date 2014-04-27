@@ -9868,6 +9868,12 @@ var App = App || {};
 $(document).ready(function(){
 	App.checkInputNumber();
 })
+$(document).ready(function(){
+	$("#chinaMap").click(function(){
+		var city = $(this).next().text();
+		window.location = "http://www.baidu.com";
+	});
+})
 var App = App || {};
 (function(){
 	var selectableInput = function (){

@@ -36,12 +36,14 @@
 	}
 	a {
 		text-decoration: none;
+		padding: 0 0.25em;
+		line-height: 1.8em;
 		&:hover{
-			background-color: blue;
+			background-color: lighten(blue, 20%);
 			color: white;
 		}
 		&.active {
-			background-color: blue;
+			background-color: lighten(blue, 20%);
 			color: white;
 		}
 	}
@@ -133,18 +135,30 @@
 		float: left;
 		padding-right: 1em;
 	}
+	.table {
+		td {
+			.small-font-size;
+		}
+	}
 	.item-box:last-child {
 		float: right;
+		width: 100px;
+		a {
+			.full-width;
+		}
 	}
 	.item-box:nth-child(2) {
 		width: 350px;
 	}
 	a.card-name {
-		.big-font-size;
+		.large-font-size;
 	}
 	a.btn {
 		display: inline-block;
 		margin-top: 3em;
+	}
+	p {
+		.small-font-size;
 	}
 	i {
 		display: inline-block;
@@ -160,5 +174,5 @@ div.split {
 	background-color: @tulip;
 }
 div.split-dashed {
-	border-bottom: 1px dashed @gray-lighter;
+	border-bottom: 1px dashed @gray-light;
 }
