@@ -29,7 +29,7 @@
                         </li>
                         <li><a href="company-loan.html">企业贷款</a>
                         </li>
-                        <li><a href="personal-loan..html">个人贷款</a>
+                        <li><a href="personal-loan.html">个人贷款</a>
                         </li>
                         <li><a href="investment.html">投资理财</a>
                         </li>
@@ -83,73 +83,170 @@
                     </div>
                     <button type="submit" class="btn btn-default">重新搜索</button>
                     <a class="btn btn-primary" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">高级搜索</a>
-	                <div id="collapseOne" class="panel-collapse collapse">
-	                    <div class="panel-body">
-	                        <div class="row advance-search-item">
-	                        	<div class="col-sm-4 text-right title ">
-	                        		职业身份：
-	                        	</div>
-	                        	<div class="col-sm-8">
-	                        		<a href="#">个体户</a>
-	                        		<a href="#">上班族</a>
-	                        		<a href="#">无固定职业</a>
-	                        	</div>
-	                        </div>
-	                        <div class="row advance-search-item">
-	                        	<div class="col-sm-4 text-right title">
-	                        		名下房产：
-	                        	</div>
-	                        	<div class="col-sm-8">
-	                        		<a href="#">无房产</a>
-	                        		<a href="#">商品住宅</a>
-	                        		<a href="#">商铺</a>
-	                        		<a href="#">办公楼</a>
-	                        		<a href="#">厂房</a>
-	                        		<a href="#">经适房</a>
-	                        		<a href="#">房改房</a>
-	                        		<a href="#">小产权房</a>
-	                        		<a href="#">商住两用房</a>
-	                        		<a href="#">军产房</a>
-	                        	</div>
-	                        </div>
-	                        <div class="row advance-search-item">
-	                        	<div class="col-sm-4 text-right title">
-	                        		名下是否有车：
-	                        	</div>
-	                        	<div class="col-sm-8">
-	                        		<a href="#">个体户</a>
-	                        		<a href="#">上班族</a>
-	                        		<a href="#">无固定职业</a>
-	                        	</div>
-	                        </div>
-	                        <div class="row advance-search-item">
-	                        	<div class="col-sm-4 text-right title">
-	                        		两年内信用情况
-	                        	</div>
-	                        	<div class="col-sm-8">
-	                        		<a href="#">个体户</a>
-	                        		<a href="#">上班族</a>
-	                        		<a href="#">无固定职业</a>
-	                        	</div>
-	                        </div>
-	                    </div>
-	                </div>
+                    <div id="collapseOne" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="row advance-condition-item">
+                                <div class="col-sm-4 text-right title ">
+                                    职业身份：
+                                </div>
+                                <div class="col-sm-8">
+                                    <a href="#">个体户</a>
+                                    <a href="#">上班族</a>
+                                    <a href="#">无固定职业</a>
+                                </div>
+                            </div>
+                            <div class="row advance-condition-item">
+                                <div class="col-sm-4 text-right title">
+                                    名下房产：
+                                </div>
+                                <div class="col-sm-8">
+                                    <a href="#">无房产</a>
+                                    <a href="#">商品住宅</a>
+                                    <a href="#">商铺</a>
+                                    <a href="#">办公楼</a>
+                                    <a href="#">厂房</a>
+                                    <a href="#">经适房</a>
+                                    <a href="#">房改房</a>
+                                    <a href="#">小产权房</a>
+                                    <a href="#">商住两用房</a>
+                                    <a href="#">军产房</a>
+                                </div>
+                            </div>
+                            <div class="row advance-condition-item">
+                                <div class="col-sm-4 text-right title">
+                                    名下是否有车：
+                                </div>
+                                <div class="col-sm-8">
+                                    <a href="#">个体户</a>
+                                    <a href="#">上班族</a>
+                                    <a href="#">无固定职业</a>
+                                </div>
+                            </div>
+                            <div class="row advance-condition-item">
+                                <div class="col-sm-4 text-right title">
+                                    两年内信用情况
+                                </div>
+                                <div class="col-sm-8">
+                                    <a href="#">个体户</a>
+                                    <a href="#">上班族</a>
+                                    <a href="#">无固定职业</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </form>
                 <div class="search-result-wrapper">
-                	<div class="row result-item">
-                		<div class="col-sm-2 ">
-                			<img src="../public/asset/img/bg-1.jpg" alt="">
-                		</div>
-                		<div class="col-sm-10">
-                			<div class="title">
-                				<a href="#">sdfsdf</a>
-                			</div>
-                		</div>
-                	</div>
+                    <table class="table table-striped search-table">
+                        <thead>
+                            <tr>
+                                <th>银行</th>
+                                <th>总费用/贷款金额</th>
+                                <th>月供</th>
+                                <th>总利息</th>
+                                <th>申请条件</th>
+                                <th>详情</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="even text-middle">
+                                <td>花旗银行</td>
+                                <td>50,000</td>
+                                <td>1200</td>
+                                <td>2%</td>
+                                <td>任何人</td>
+                                <td><a href="search-detail.html" class="btn btn-primary" >查看</a>
+                                </td>
+                            </tr>
+                            <tr class="odd text-middle">
+                                <td>平安银行</td>
+                                <td>10,000</td>
+                                <td>1200</td>
+                                <td>1%</td>
+                                <td>学生</td>
+                                <td><a href="javascript:void(0)" class="btn btn-primary">查看</a>
+                                </td>
+                            </tr>
+                            <tr class="odd text-middle">
+                                <td>平安银行</td>
+                                <td>10,000</td>
+                                <td>1200</td>
+                                <td>1%</td>
+                                <td>学生</td>
+                                <td><a href="javascript:void(0)" class="btn btn-primary">查看</a>
+                                </td>
+                            </tr>
+                            <tr class="odd text-middle">
+                                <td>平安银行</td>
+                                <td>10,000</td>
+                                <td>1200</td>
+                                <td>1%</td>
+                                <td>学生</td>
+                                <td><a href="javascript:void(0)" class="btn btn-primary">查看</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul class="pagination">
+                        <li class="disabled"><a href="#">&laquo;</a></li>
+                        <li><a href="#" class="active">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="../public/asset/js/main-dev.js"></script>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">花旗银行</h4>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-customize">
+        <ul class="footer-nav">
+            <li><a href="#">关于XX</a>
+            </li>
+            <li><a href="#">联系我们</a>
+            </li>
+            <li><a href="#">信贷经理入驻</a>
+            </li>
+            <li><a href="#">贷款计算器</a>
+            </li>
+            <li><a href="#">热门城市贷款</a>
+            </li>
+            <li><a href="#">热门信用卡申请</a>
+            </li>
+            <li><a href="#">加入我们</a>
+            </li>
+            <li><a href="#">免责声明</a>
+            </li>
+            <li><a href="#">信贷员公约</a>
+            </li>
+            <li><a href="#">建议与投诉</a>
+            </li>
+            <li><a href="#">网站地图</a>
+            </li>
+        </ul>
+        <span><a href="#">XX</a>-<a href="#">深圳小额贷款平台</a>版权所有</span>
+        <p>Copyright © 2014 Rong360.com Inc. All Rights Reserved. 京ICP备12000680号-1京公网安备110108008323号</p>
+    </div>
+    <script type="text/javascript" src="../public/asset/js/main-dev.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,7 @@
+.font(@scale){
+    font-size: 16px * @scale;
+    font-size: 1rem * @scale;
+}
 .border-radius(@radius){
 	-webkit-border-radius: @radius;
 	-moz-border-radius: @radius;
@@ -9,4 +13,14 @@
 	background-image: -moz-linear-gradient(top, @startColor, @endColor);
 	background-image: -ms-linear-gradient(top, @startColor, @endColor);
 	background-image: -o-linear-gradient(top, @startColor, @endColor);
+}
+.ls {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.text-overflow {
+	text-overflow:ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 }
