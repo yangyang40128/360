@@ -1,0 +1,17 @@
+ul.sub-nav {
+	list-style-type: none;
+	background-color: @tulip;
+	li {
+		display: inline-block;
+	}
+	a {
+		padding: 1em;
+		display: inline-block;
+		text-decoration: none;
+		color: white;
+		&:hover ,&.active {
+			background-color: white;
+			color: @tulip;
+		}
+	}
+}

@@ -11,6 +11,16 @@ module.exports = function(grunt) {
 						"css/main.less"
 					]
 				}
+			},
+			staticPage: {
+				options: {
+					yuicompress:false
+				},
+				files: {
+					"../workspace/LaiZheDai/WebContent/static/public/asset/css/main-<%= pkg.version %>.css":[
+						"css/main.less"
+					]
+				}
 			}
 		},
 		concat: {
@@ -26,12 +36,32 @@ module.exports = function(grunt) {
 						"js/*.js"
 					]
 				}
+			},
+			staticJs: {
+				files : {
+					"../workspace/LaiZheDai/WebContent/static/public/asset/js/main-dev.js": [
+						"bower_components/jquery/dist/jquery.js",
+						"bower_components/bootstrap/js/tab.js",
+						"bower_components/bootstrap/js/dropdown.js",
+						"bower_components/bootstrap/js/transition.js",
+						"bower_components/bootstrap/js/collapse.js",
+						"bower_components/bootstrap/js/modal.js",
+						"js/*.js"
+					]
+				}
 			}
 		},
 		uglify: {
 			release: {
 				files : {
 					"public/asset/js/main-min.js":[
+						"public/asset/js/main-dev.js"
+					]
+				}
+			},
+			staticRelease: {
+				files : {
+					"../workspace/LaiZheDai/WebContent/static/public/asset/js/main-min.js":[
 						"public/asset/js/main-dev.js"
 					]
 				}
