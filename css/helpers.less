@@ -7,6 +7,20 @@
 	-moz-border-radius: @radius;
 	border-radius: @radius;
 }
+.box-sizing(@sizing) {
+	-webkit-box-sizing: @sizing;
+	-moz-box-sizing: @sizing;
+	-ms-box-sizing: @sizing;
+	-o-box-sizing: @sizing;
+	webkit-box-sizing: @sizing;
+}
+.box-shadow(@shadow) {
+	-webkit-box-shadow: @shadow;
+	-moz-box-shadow: @shadow;
+	-ms-box-shadow: @shadow;
+	-o-box-shadow: @shadow;
+	webkit-box-shadow: @shadow;
+}
 .linear-gradient(@startColor,@endColor){
 	background-image: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
 	background-image: -webkit-linear-gradient(top, @startColor, @endColor);

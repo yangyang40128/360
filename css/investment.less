@@ -1,0 +1,69 @@
+.investment-section {
+	.clearfix();
+	margin-left: -1rem; 
+	padding-top: 2em;
+	.section-card {
+		position: relative;
+		padding: 3em 1em 3em;
+		margin-bottom: 3em;
+		color: @gray-light;
+	}
+	div.filed {
+		padding: 0.25em 0;
+		border-bottom: 1px dashed @gray-lighter;
+	}
+	span {
+		.text-overflow;
+	}
+	span:first-child {
+		text-align: right;
+	}
+	.highlight {
+		.big-font-size;
+		color: @tulip;
+		line-height: 1em;
+	}
+	.bank-logo {
+		position: absolute;
+		top: -1.5em;
+		left: 1em;
+		
+		display: block;
+		padding: 1px;
+		
+		width: 64px;
+		border: 2px solid white;
+		overflow: hidden;
+		.box-shadow(2px -5px 20px @gray-light);
+		.border-radius(5px);
+		img {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		span {
+			.text-overflow;
+		}
+	}
+	.product-feature {
+		position: absolute;
+		right: -25px;
+		top: -25px;
+		display: block;
+
+		width: 60px;
+		height: 60px;
+		padding: 0.5em 0;
+		background-color: @tulip;
+		color: white;
+		text-align: center;
+		.box-shadow(-1px 1px 1px @gray-lighter);
+		.box-sizing(border-box);
+		.border-radius(100%);
+		em {
+			text-shadow: 1px 1px black;
+			.large-font-size;
+			line-height: 1em;
+		}
+	}
+}
