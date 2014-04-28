@@ -331,7 +331,6 @@ th {
   box-sizing: border-box;
 }
 html {
-  font-size: 62.5%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
@@ -1481,7 +1480,7 @@ th {
 .table > tfoot > tr > td {
   padding: 8px;
   line-height: 1.42857143;
-  vertical-align: top;
+  vertical-align: middle;
   border-top: 1px solid #dddddd;
 }
 .table > thead > tr > th {
@@ -1711,7 +1710,7 @@ legend {
 label {
   display: inline-block;
   margin-bottom: 5px;
-  font-weight: bold;
+  font-weight: normal;
 }
 input[type="search"] {
   -ms-box-sizing: border-box;
@@ -4065,8 +4064,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  background-color: #eeeeee;
+  border-color: #dedede;
 }
 .navbar-default .navbar-brand {
   color: #777777;
@@ -4079,19 +4078,34 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-text {
   color: #777777;
 }
+.navbar-default .navbar-nav > li {
+  margin-left: 1px;
+  margin-right: 1px;
+}
 .navbar-default .navbar-nav > li > a {
+  position: relative;
   color: #777777;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #333333;
-  background-color: transparent;
+  color: #ffffff;
+  background-color: #6666ff;
+}
+.navbar-default .navbar-nav > li > a:hover:before,
+.navbar-default .navbar-nav > li > a:focus:before,
+.navbar-default .navbar-nav > li > a:hover:after,
+.navbar-default .navbar-nav > li > a:focus:after {
+  visibility: visible;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #555555;
-  background-color: #e7e7e7;
+  color: #ffffff;
+  background-color: #6666ff;
+}
+.navbar-default .navbar-nav > .active > a:before,
+.navbar-default .navbar-nav > .active > a:after {
+  visibility: visible;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -4111,13 +4125,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #e7e7e7;
+  border-color: #dedede;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #e7e7e7;
-  color: #555555;
+  background-color: #6666ff;
+  color: #ffffff;
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -4125,14 +4139,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #333333;
-    background-color: transparent;
+    color: #ffffff;
+    background-color: #6666ff;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #555555;
-    background-color: #e7e7e7;
+    color: #ffffff;
+    background-color: #6666ff;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -4145,7 +4159,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #777777;
 }
 .navbar-default .navbar-link:hover {
-  color: #333333;
+  color: #ffffff;
 }
 .navbar-inverse {
   background-color: #222222;
@@ -4240,7 +4254,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding: 8px 15px;
   margin-bottom: 20px;
   list-style: none;
-  background-color: #f5f5f5;
+  background-color: #eeeeee;
   border-radius: 4px;
 }
 .breadcrumb > li {
@@ -5966,7 +5980,7 @@ body {
   font-family: "Avenir Next", "Segoe UI", "Roboto", "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
 }
 .tulip {
-  color: #ebb747;
+  color: #6666ff;
 }
 .full-width {
   width: 100%;
@@ -6019,7 +6033,7 @@ div.poster:before {
 .ad {
   margin: 1em 0;
   height: 100px;
-  border: 5px solid #ebb747;
+  border: 5px solid #6666ff;
   overflow: hidden;
 }
 .ad img {
@@ -6027,10 +6041,10 @@ div.poster:before {
 }
 div.advance-condition-item {
   padding: 1em 0;
-  border-bottom: 1px dashed #ebb747;
+  border-bottom: 1px dashed #6666ff;
 }
 div.advance-condition-item .title {
-  color: #ebb747;
+  color: #6666ff;
 }
 div.advance-condition-item a {
   margin-right: 0.5em;
@@ -6047,7 +6061,7 @@ div.detail-wrapper .detail-header {
   margin: 1em 0;
   font-size: 18px;
   font-size: 1.125rem;
-  color: #ebb747;
+  color: #6666ff;
   border-bottom: 3px solid gray;
 }
 div.detail-wrapper .detail-header img {
@@ -6084,7 +6098,7 @@ div.detail-wrapper .detail-header img {
   left: 0;
   padding: 0 1em;
   color: white;
-  background-color: #ebb747;
+  background-color: #6666ff;
 }
 .condition-item .condition-name:before {
   position: absolute;
@@ -6092,10 +6106,10 @@ div.detail-wrapper .detail-header img {
   right: -10px;
   top: 0;
   bottom: 0;
-  border-left: 5px solid #ebb747;
+  border-left: 5px solid #6666ff;
   border-right: 5px solid transparent;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
 }
 .condition-item ul {
   list-style-type: none;
@@ -6121,7 +6135,7 @@ div.detail-wrapper .detail-header img {
 .credit-card-section .section-header {
   position: relative;
   padding-left: 12em;
-  border-top: 2px solid #ebb747;
+  border-top: 2px solid #6666ff;
 }
 .credit-card-section .section-header:before,
 .credit-card-section .section-header:after {
@@ -6186,7 +6200,7 @@ div.detail-wrapper .detail-header img {
 }
 .credit-card-section ul.card-list span {
   display: block;
-  color: #ebb747;
+  color: #6666ff;
 }
 .credit-card-section .section-name {
   position: absolute;
@@ -6196,7 +6210,7 @@ div.detail-wrapper .detail-header img {
   font-size: 18px;
   font-size: 1.125rem;
   color: white;
-  background-color: #ebb747;
+  background-color: #6666ff;
 }
 .credit-card-section .section-name:before {
   position: absolute;
@@ -6204,8 +6218,8 @@ div.detail-wrapper .detail-header img {
   right: -74px;
   top: 0;
   bottom: 0;
-  border-left: 41px solid #ebb747;
-  border-top: 0px solid #ebb747;
+  border-left: 41px solid #6666ff;
+  border-top: 0px solid #6666ff;
   border-bottom: 43px solid transparent;
   border-right: 33px solid transparent;
 }
@@ -6270,14 +6284,14 @@ div.detail-wrapper .detail-header img {
 div.split {
   margin: 2em 0;
   height: 2px;
-  background-color: #ebb747;
+  background-color: #6666ff;
 }
 div.split-dashed {
   border-bottom: 1px dashed #999999;
 }
 ul.sub-nav {
   list-style-type: none;
-  background-color: #ebb747;
+  background-color: #6666ff;
 }
 ul.sub-nav li {
   display: inline-block;
@@ -6291,7 +6305,7 @@ ul.sub-nav a {
 ul.sub-nav a:hover,
 ul.sub-nav a.active {
   background-color: white;
-  color: #ebb747;
+  color: #6666ff;
 }
 .platform-wrapper {
   position: relative;
@@ -6300,7 +6314,7 @@ ul.sub-nav a.active {
   margin: 1em 0;
 }
 .platform-section .section-header {
-  border-top: 2px solid #ebb747;
+  border-top: 2px solid #6666ff;
 }
 .platform-section .section-body {
   margin: 1em;
@@ -6315,7 +6329,7 @@ ul.sub-nav a.active {
 }
 .platform-section .section-footer em {
   font-style: normal;
-  color: #ebb747;
+  color: #6666ff;
 }
 .platform-section .platform-name {
   position: relative;
@@ -6325,7 +6339,7 @@ ul.sub-nav a.active {
   font-size: 18px;
   font-size: 1.125rem;
   color: white;
-  background-color: #ebb747;
+  background-color: #6666ff;
 }
 .platform-section .platform-name:before {
   position: absolute;
@@ -6333,8 +6347,8 @@ ul.sub-nav a.active {
   right: -74px;
   top: 0;
   bottom: 0;
-  border-left: 41px solid #ebb747;
-  border-top: 0px solid #ebb747;
+  border-left: 41px solid #6666ff;
+  border-top: 0px solid #6666ff;
   border-bottom: 43px solid transparent;
   border-right: 33px solid transparent;
 }
@@ -6342,25 +6356,25 @@ ul.sub-nav a.active {
   color: #999999;
 }
 .star i:hover {
-  color: #ebb747;
+  color: #6666ff;
 }
 .star:hover {
   text-decoration: none !important;
 }
 .star.star-1 i:nth-child(1) {
-  color: #ebb747;
+  color: #6666ff;
 }
 .star.star-2 i:nth-child(-n+2) {
-  color: #ebb747;
+  color: #6666ff;
 }
 .star.star-3 i:nth-child(-n+3) {
-  color: #ebb747;
+  color: #6666ff;
 }
 .star.star-4 i:nth-child(-n+4) {
-  color: #ebb747;
+  color: #6666ff;
 }
 .star.star-5 i:nth-child(-n+5) {
-  color: #ebb747;
+  color: #6666ff;
 }
 .search-form {
   margin: -3em 0 1em;
@@ -6384,6 +6398,9 @@ ul.sub-nav a.active {
 .search-form i {
   color: #999999;
 }
+.search-form.search-form--plantform {
+  margin: -4em 0 1em;
+}
 ul.news-list {
   padding: 0;
 }
@@ -6406,17 +6423,17 @@ ul.news-list a {
   font-size: 1rem;
 }
 ul.news-list a:hover {
-  background-color: #ebb747 !important;
+  background-color: #6666ff !important;
   color: #eeeeee;
 }
 ul.news-list a:hover + span.date {
   background-color: #eeeeee;
-  color: #ebb747;
+  color: #6666ff;
 }
 ul.news-list span.date {
   position: absolute;
   right: 0;
-  background-color: #ebb747;
+  background-color: #6666ff;
   color: white;
 }
 .investment-section {
@@ -6460,7 +6477,7 @@ ul.news-list span.date {
 .investment-section .highlight {
   font-size: 18px;
   font-size: 1.125rem;
-  color: #ebb747;
+  color: #6666ff;
   line-height: 1em;
 }
 .investment-section .bank-logo {
@@ -6500,7 +6517,7 @@ ul.news-list span.date {
   width: 60px;
   height: 60px;
   padding: 0.5em 0;
-  background-color: #ebb747;
+  background-color: #6666ff;
   color: white;
   text-align: center;
   -moz-box-shadow: -1px 1px 1px #eeeeee;
