@@ -75,9 +75,9 @@
                         <img src="../public/asset/img/ad-1.jpg" alt="">
                     </div>
                     <ul class="nav nav-tabs">
-                        <li><a href="#region" data-toggle="tab">地域</a>
+                        <li class="active"><a href="#region" data-toggle="tab">地域</a>
                         </li>
-                        <li class="active"><a href="#reconmand" data-toggle="tab">推荐</a>
+                        <li><a href="#reconmand" data-toggle="tab">推荐</a>
                         </li>
                         <li><a href="#exposure" data-toggle="tab">曝光台</a>
                         </li>
@@ -92,16 +92,15 @@
                         </div>
                     </form>
                     <div class="tab-content">
-                        <div class="tab-pane" id="region">
-                            <div id="ChinaMap">
-                                <div id="map"></div>
-                            </div>
+                        <div class="tab-pane active" id="region">
+                            <div id="map"></div>
                         </div>
-                        <div class="tab-pane active" id="reconmand">
+                        <div class="tab-pane" id="reconmand">
                             <div class="platform-section">
                                 <div class="section-header">
                                     <span class="platform-name">人人贷</span>
                                 </div>
+                                
                                 <div class="section-body">
                                     <p>
                                         分析师认为，五一小长假或将迎来短期理财逆袭，5万以上的资金可重点关注短期理财产品，而手中有多余闲钱的可投资货基分析师认为，五一小长假或将迎来短期理财逆袭，5万以上的资金可重点关注短期理财产品，而手中有多余闲钱的可投资货基分析师认为，五一小长假或将迎来短期理财逆袭，5万以上的资金可重点关注短期理财产品，而手中有多余闲钱的可投资货基分析师认为，五一小长假或将迎来短期理财逆袭，5万以上的资金可重点关注短期理财产品，而手中有多余闲钱的可投资货基分析师认为，五一小长假或将迎来短期理财逆袭，5万以上的资金可重点关注短期理财产品，而手中有多余闲钱的可投资货基
@@ -264,6 +263,7 @@
             </div>
         </div>
 
+
     </div>
     <div class="footer-customize">
         <ul class="footer-nav">
@@ -297,6 +297,14 @@
     <script src="../public/asset/js/raphael.js"></script>
     <script src="../public/asset/js/chinamapPath.js"></script>
     <script src="../public/asset/js/chinamap.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $("#map").find("path").click(function(){
+            var city = $(this).next().text();
+            window.location = "http://www.baidu.com?city="+city;
+        });
+    });
+    </script>
 </body>
 
 </html>
